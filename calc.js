@@ -252,11 +252,11 @@ $(document).ready(function () {
     let service= null;
     let option = null;
     
-    $('#treba').change(selectService);
-    $('#treba_type').change(selectOption);
-    $('#church_count').change(selectChurchCount);
-    $('#acceptance').change(recalc);
-    $('#email').on('input',recalc);
+    $('select[name="treba"]').change(selectService);
+    $('select[name="treba_type]').change(selectOption);
+    $('select[name="church_count]').change(selectChurchCount);
+    $('select[name="acceptance]').change(recalc);
+    $('select[name="email]').on('input',recalc);
     
     init();
 
